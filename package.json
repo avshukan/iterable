@@ -1,0 +1,20 @@
+{
+  "name": "iterable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "cover": "node --test --experimental-test-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avshukan/iterable.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avshukan/iterable/issues"
+  },
+  "homepage": "https://github.com/avshukan/iterable#readme"
+}
