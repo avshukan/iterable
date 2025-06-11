@@ -23,10 +23,22 @@ const tree = new TreeNode(
     ],
 );
 
+console.log('='.repeat(50));
+console.log('Task 1: Iterating through the tree nodes:');
+
 const threeNodes = take(tree, 3);
 
 console.log('First three nodes in the tree:', threeNodes);
 
+console.log('='.repeat(50));
+console.log('Task 2: Iterating through the tree nodes:');
+
+for (const branch of tree) {
+    console.log(branch.getValue());
+}
+
+console.log('='.repeat(50));
+console.log('Task 3: Fibonacci sequence:');
 
 const fib = new Fibonacci(10);
 const isEven = (num) => num % 2 === 0;
