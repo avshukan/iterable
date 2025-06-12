@@ -20,6 +20,4 @@ const { AsyncFibonacci } = require('./async-fibonacci');
     expected,
     `Expected ${expected} but got ${result}`
   );
-
-  console.log('✅ All tests passed');
 })();
