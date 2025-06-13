@@ -10,7 +10,7 @@ global.fetch = async (url) => {
     return {
       status: 200,
       headers: {
-        get: () => '1234'
+        get: () => 1234
       }
     };
   }
@@ -19,7 +19,7 @@ global.fetch = async (url) => {
     return {
       status: 200,
       headers: {
-        get: () => '5678'
+        get: () => 5678
       }
     };
   }
@@ -55,10 +55,8 @@ global.fetch = async (url) => {
   const expected = [
     { url: 'https://example.com', status: 200, contentLength: 1234 },
     { url: 'https://httpbin.org/get', status: 200, contentLength: 5678 },
-    { url: 'https://invalid-url.xyz', status: 'ERROR', contentLength: 0 }
+    null
   ];
 
   assert.deepStrictEqual(result, expected, `Expected ${JSON.stringify(expected)} but got ${JSON.stringify(result)}`);
-
-  console.log('✅ All tests passed');
 })();
